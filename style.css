@@ -9,9 +9,25 @@ body {
 
 /*Společné vlastnosti*/
 
+.hlavni-foto {
+    padding-top: 60px;
+}
+
 .nadpis, .podnadpis-1, .podnadpis-2 {
     font-family: 'Noto Sans Vai', sans-serif;
     font-weight: 900;
+}
+
+h1 {
+    margin: 40px 0 0 0;
+}
+
+.underline {
+    border-bottom: 2px solid #407BFF;
+    display: inline-block;
+    width: 60px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 p, .text {
@@ -38,10 +54,10 @@ p, .text {
 }
 
 .dobrodruzstvi, .pohoda {
-    padding: 12px 32px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
+    padding: 12px 32px;
 }
 
 .dobrodruzstvi {
@@ -61,21 +77,17 @@ p, .text {
     body {
         padding: 0 20px;
     }
-
-    .hlavni-foto {
-        padding-top: 60px;
-    }
   
     .prvni-sekce, .druha-sekce, .treti-sekce  {
         text-align: center;
     }
 
-    p {
-        margin-bottom: 30px;
+    .podnadpis-2 {
+        padding-top: 60px;
     }
 
-    .podnadpis-2 {
-        margin-top: 60px;
+    p {
+        margin-bottom: 28px ;
     }
 
     .tlacitko-1 {
@@ -109,3 +121,127 @@ p, .text {
 
 /*Tablet*/
 
+@media screen and (min-width: 640px) {
+
+    .hlavni-foto {
+        width: 400px;
+    }
+    
+    .tlacitka {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tlacitko-1, .tlacitko-2 {
+        margin: 0;
+    }
+
+    .tlacitko-1 {
+        margin-right: 20px;
+    }
+
+    .ikona + .ikona {
+        margin-top: 0;
+    }
+
+    .ikona {
+        display: block;
+        flex: 0 0 calc((100% - 40px) / 3);
+        padding: 0;
+        height: 172px;
+    }
+
+    .ikony {
+        display: flex;
+        gap: 20px;
+    }
+
+    .logo {
+        margin: 40px 0 20px 0;
+    }
+
+    .text {
+        padding: 0 15px;
+    }
+
+    .podnadpis-1, .podnadpis-2, p {
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .podnadpis-1, .podnadpis-2 {
+        margin: 80px 0 18px 0;
+    }
+
+    p {
+        margin-bottom: 40px;
+        padding: 0 70px;
+    }
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1100px) {
+
+    body {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    p, .podnadpis-1, .podnadpis-2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .prvni-sekce, .druha-sekce {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 80px;
+    }
+
+    .treti-sekce {
+        display: flex;
+    }
+
+    .druha-sekce, .treti-sekce {
+        align-items: center;
+    }
+
+    .leva-1 {
+        text-align: left;
+    }
+
+    h1 {
+        margin-top: 133px;
+    }
+
+    .tlacitka {
+        justify-content: left;
+        margin-top: 40px;
+    }
+
+    .hlavni-foto {
+        width: 425px;
+        margin-left: 94px;
+    }
+
+    .popis-1, .podnadpis-1 {
+        margin-left: 60px;
+    }
+
+    .popis-2 {
+        margin-right: 60px;
+    }
+
+    .podnadpis-1, .podnadpis-2 {
+        margin-bottom: 18px;
+    }
+
+    .prava-2, .leva-3 {
+        text-align: left;
+    }
+
+    .ikona {
+        height: 190px;
+    }
+}
