@@ -1,0 +1,111 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+/*Společné vlastnosti*/
+
+.nadpis, .podnadpis-1, .podnadpis-2 {
+    font-family: 'Noto Sans Vai', sans-serif;
+    font-weight: 900;
+}
+
+p, .text {
+    font-family: 'Noto Sans Vai', sans-serif;
+    font-weight: 300;
+    color: #8B8B8B;
+} 
+
+.tlacitka {
+    font-family: 'Noto Sans Vai', sans-serif;
+    font-weight: 400;
+}
+
+.nadpis {
+    font-size: 28px;
+}
+
+.podnadpis-1, .podnadpis-2, p {
+    font-size: 16px;
+}
+
+.text, .tlacitka {
+    font-size: 14px;
+}
+
+.dobrodruzstvi, .pohoda {
+    padding: 12px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+}
+
+.pohoda {
+    background-color: #8B8B8B;
+}
+
+
+/*Mobil*/
+
+
+@media screen and (min-width: 0px) {
+
+    body {
+        padding: 0 20px;
+    }
+
+    .hlavni-foto {
+        padding-top: 60px;
+    }
+  
+    .prvni-sekce, .druha-sekce, .treti-sekce  {
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    .podnadpis-2 {
+        margin-top: 60px;
+    }
+
+    .tlacitko-1 {
+        margin-bottom: 32px;
+        margin-top: 40px;
+    }
+    
+    .tlacitko-2 {
+        margin-bottom: 70px;
+    }
+
+    .ikona {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px #407BFF1F;
+    }
+
+    .ikona + .ikona {
+        margin-top: 15px;
+    }
+    
+    .treti-sekce {
+        margin-bottom: 60px;
+    }
+}
+
+
+/*Tablet*/
+
